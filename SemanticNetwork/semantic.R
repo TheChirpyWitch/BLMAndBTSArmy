@@ -5,24 +5,35 @@ library(ggraph)
 data(stop_words)
 dat <- read_csv("original_tweets.csv") %>% 
   transmute(
-    id = 1:nrow(.), # headline identification number for reference
+    id = 1:nrow(.),
     text = gsub("[-/]", " ", tweet),
     text = tolower(gsub("[^A-Za-z ]", "", text))
   ) %>% 
   unnest_tokens(word, text) %>% 
   anti_join(stop_words, by = "word") %>% 
-  filter(word != "uddudcc" & word != "tco" & word != "weure" & word != "nhttps" & word != "de") # corpus-specific stop word
+  filter(word != "uddudcc" & word != "tco" & word != "weure" & word != "nhttps" & word != "de")
 
 
 dat1 <- read_csv("original_tweets.csv") %>% 
   transmute(
-    id = 1:nrow(.), # headline identification number for reference
+    id = 1:nrow(.),
     text = gsub("[-/]", " ", tweet),
     text = tolower(gsub("[^A-Za-z ]", "", text))
   ) %>% 
   unnest_tokens(word, text, token = "ngrams", n = 2) %>% 
   anti_join(stop_words, by = "word") %>% 
-  filter(word != "uddudcc" & word != "tco" & word != "weure" & word != "nhttps" & word != "de") # corpus-specific stop word
+  filter(word != "uddudcc" & word != "tco" & word != "weure" & word != "nhttps" & word != "de")
+
+dat2 <- read_csv("original_tweets.csv") %>% 
+  transmute(
+    id = 1:nrow(.),
+    text = gsub("[-/]", " ", user_description),
+    text = tolower(gsub("[^A-Za-z ]", "", text))
+  ) %>% 
+  unnest_tokens(word, text) %>% 
+  anti_join(stop_words, by = "word") %>% 
+  filter(word != "ud" & word != "ub" & word != "ubcudcuccubube" & word != "udcudf" & word != "udcudffufefududcudf"& word != "uddudc" & word != "uddudcb" & word != "ue" & word != "uecued" & word != "ueduec" & word != "uddudcc" & word != "uufef" & word != "uu")
+
 
 
 cosine_matrix <- function(tokenized_data, lower = 0, upper = 1, filt = 0) {
@@ -73,12 +84,14 @@ walktrap_topics <- function(g, ...) {
   return(list(membership = membership, dendrogram = dendrogram))
 }
 
+cos_mat2 <- cosine_matrix(dat2, lower = .01, upper = .80, filt = .80)
+
 cos_mat1 <- cosine_matrix(dat1, lower = .01, upper = .80, filt = .80)
 
 cos_mat <- cosine_matrix(dat, lower = .01, upper = .80, filt = .80)
 
-g <- graph_from_adjacency_matrix(cos_mat, mode = "undirected", weighted = TRUE)
-set.seed(1840)
+g <- graph_from_adjacency_matrix(cos_mat2, mode = "undirected", weighted = TRUE)
+set.seed(1160)
 ggraph(g, layout = "nicely") +
   geom_edge_link(aes(alpha = weight), show.legend = FALSE) + 
   geom_node_label(aes(label = name)) +
@@ -96,7 +109,7 @@ topics$membership %>%
 
 
 V(g)$cluster <- arrange(topics$membership, word)$group
-set.seed(1840)
+set.seed(1160)
 ggraph(g, layout = "nicely") +
   geom_edge_link(aes(alpha = weight), show.legend = FALSE) + 
   geom_node_label(
@@ -104,3 +117,4 @@ ggraph(g, layout = "nicely") +
     show.legend = FALSE
   ) +
   theme_void()
+
