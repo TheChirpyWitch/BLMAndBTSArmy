@@ -1,3 +1,5 @@
+Tweets Analysis
+
 Groups:
 
 1 amount, army, armys, blacklivesmatter, btsarmy, btstwt, close, donate, donated, donating, hit, https, im, join, letus, matchamillion, matchamillionu, matchthemillion, oneinanarmy, project, raised, word
@@ -25,3 +27,16 @@ Group 5 is about experience of people involved
 6 able to, if you, to donate, you can
 7 btstwt https, matchamillion btstwt
 8 i love, love you, so much
+
+
+
+Bio/User description Analysis
+
+1 blacklivesmatter, blm, genre, la
+2 bias, biased, btsarmy, enthusiast, hard, im, jimin, jin, jungkook, stan, student, suga, yoongi
+3 acc, account, army, bangtan, bts, btstwt, day, fan, forever, ium, life, live, love, ly, mom, music, ot, purple, time, txt
+4 dont, follow, http
+5 kim, namjoon, taehyung
+6 billboard, hot
+7 heart
+8 soul
