@@ -10,16 +10,18 @@ if __name__ == "__main__":
 
 	d = {} #{no. of followers: no. of nodes}
 
+	col2 = mydb["users"]
+	"""
 	for document in mycol.find():
-		#print(type(document))
 		user = document["user"]
+		user_id = document["user"]["id"]
+		if mydb.col2.count_documents({'id': user_id}) == 0:
+			x = col2.insert_one(user)
 
-		#followers_count = get_followers_count(target)
-		#mydict = { "id": target, "followers_count": followers_count }
 
-		#x = mycol.insert_one(mydict)
-		#print(user["id"])
-		degree = user["followers_count"]
+	"""
+	for document in col2.find():
+		degree = document["followers_count"]
 
 
 		if degree not in d:
