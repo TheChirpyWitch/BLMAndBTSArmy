@@ -1,7 +1,7 @@
 
 ## CS185C - Social Network Analysis 
 
-### Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
+### Project: Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
 ### Team Members: Vrinda | Inhee | Anirudh
 <blockquote>
 In June 2020, BTS (South Korean hip-hop boy group) donated one million dollars 
