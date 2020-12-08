@@ -1,6 +1,6 @@
 
-##CS185C - Social Network Analysis 
-##(Vrinda | Inhee | Anirudh)
+## CS185C - Social Network Analysis 
+## (Vrinda | Inhee | Anirudh)
 
 ### Project: Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
 <blockquote>
@@ -10,7 +10,8 @@ had mobilised via Twitter and decided to match the donation. They used Twitter
 hashtags #MatchAMillion, #Match1Million and #MatchTheMillion to spread word about 
 the campaign. Within 24 hours between 7th-8th of June, 2020, the fundraising 
 account @OneInAnARMY announced that they had met their goal of 1 million dollars 
-for BLM. [bts1,bts2]
+for BLM. 
+
 BTS Army is known for supporting various causes, so the initial campaign was 
 not surprising. What was surprising was the speed at which this feat had been 
 completed. This 24 hour window became the focal point of our analysis.
