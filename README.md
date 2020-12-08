@@ -1,9 +1,8 @@
 
-### CS185C - Social Network Analysis 
-### (Vrinda | Inhee | Anirudh)
+##CS185C - Social Network Analysis 
+##(Vrinda | Inhee | Anirudh)
 
-Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
-=========
+### Project: Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
 <blockquote>
 In June 2020, BTS (South Korean hip-hop boy group) donated one million dollars 
 for Black Lives Matter (BLM). The BTS official fanclub, called ARMY, 
