@@ -19,6 +19,11 @@ completed. This 24 hour window became the focal point of our analysis.
 
 ### [Report](https://github.com/TheChirpyWitch/BLMAndBTSArmy/blob/master/FinalReport/CS185C_FinalReport_Vrinda_Inhee_Anirudh.pdf) | [Slide](https://github.com/TheChirpyWitch/BLMAndBTSArmy/blob/master/Presenation/CS185C-BLMandBTS.pdf)
 
+Key Words
+---------
+BTS, ARMY, BLM, Social Network, Twitter, Louvain, Dynamic Network, Semantic Network, Power Law, 
+Local Bridges, #MatchAMillion 
+
 <img src="https://github.com/TheChirpyWitch/BLMAndBTSArmy/blob/master/img/BLM.png" width="550">
 <img src="https://github.com/TheChirpyWitch/BLMAndBTSArmy/blob/master/img/BTS.png" width="550">
 <img src="https://github.com/TheChirpyWitch/BLMAndBTSArmy/blob/master/img/data-prep.png" width="550">
