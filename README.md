@@ -1,8 +1,7 @@
 
 ## CS185C - Social Network Analysis 
-Team Members: 
+Team Members: (Vrinda | Inhee | Anirudh)
 ---------
-Vrinda | Inhee | Anirudh
 
 Project: Power of BTS ARMY for Social Change Envisaged by Twitter Network Analysis
 ---------
